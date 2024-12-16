@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </header>
+
+    <div class="contact-container">
+        <h1>Bize Ulaşın</h1>
+        <p>Adres: Manisa Akhisar AlizMTAL</p>
+        <p>Telefon: +90 123 456 7890</p>
+        <p>Email: karaoglanbedirhan2007@gmail.com</p>
+
+
+        <div id="map"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Motivasyon. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        function initMap() {
+
+            const location = { lat: 41.0082, lng: 28.9784 };
+
+
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location,
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Bizim Konumumuz',
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

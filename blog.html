@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .blog-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 15px;
+        }
+
+        .blog-card-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .blog-card-content p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .blog-card-content a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .blog-card-content a:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </header>
+
+    <div class="blog-container">
+        <div class="blog-grid">
+            <!-- Blog Kartı 1 -->
+            <div class="blog-card">
+                <img src="res4.jpg" alt="Blog Image 1">
+                <div class="blog-card-content">
+                    <h3>Motivasyonun Gücü</h3>
+                    <p>Hayatta başarının sırrı güçlü bir motivasyondur. Bu yazımızda motivasyonu artırma yollarını keşfedin.</p>
+                    <a href="blog-detail.html">Devamını Oku</a>
+                </div>
+            </div>
+
+            <!-- Blog Kartı 2 -->
+            <div class="blog-card">
+                <img src="res5.jpg" alt="Blog Image 2">
+                <div class="blog-card-content">
+                    <h3>Verimli Çalışma Teknikleri</h3>
+                    <p>Verimliliğinizi artırmak için bu teknikleri deneyin ve işlerinizi daha hızlı bir şekilde tamamlayın.</p>
+                    <a href="blog-detail.html">Devamını Oku</a>
+                </div>
+            </div>
+
+            <!-- Blog Kartı 3 -->
+            <div class="blog-card">
+                <img src="res6.jpg" alt="Blog Image 3">
+                <div class="blog-card-content">
+                    <h3>Yaşam Tarzınızı Değiştirin</h3>
+                    <p>Basit alışkanlıklarla yaşam tarzınızı nasıl iyileştirebileceğinizi öğrenmek için tıklayın.</p>
+                    <a href="blog-detail.html">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Motivasyon. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

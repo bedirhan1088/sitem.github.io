@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .team-member p {
+            color: #777;
+            font-size: 1rem;
+        }
+
+        .values {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .values .value {
+            background: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .values .value:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .team-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .values {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .values .value {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-container {
+                grid-template-columns: 1fr;
+            }
+
+            .values .value {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </header>
+
+    <div class="section">
+        <h2>Şirket Geçmişi</h2>
+        <p>Biz, 2024 yılında Manisa'da kurulan bir girişimci ekibiyiz. Yıllar içinde birçok alanda kendimizi geliştirerek, motivasyon ve verimlilik alanlarında hizmet vermeye başladık. Amacımız, insanların potansiyellerini en üst düzeye çıkarmalarına yardımcı olmaktır. Dünya çapında birçok başarıya imza attık ve bugüne kadar binlerce kişiye ilham verdik.</p>
+    </div>
+
+    <div class="section">
+        <h2>Takımımız</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <h3>Bedirhan Karaoğlan</h3>
+                <p>Kurucu - CEO</p>
+            </div>
+            <div class="team-member">
+                <h3>NONE</h3>
+                <p>Kurucu Ortak - COO</p>
+            </div>
+            <div class="team-member">
+                <h3>NONE</h3>
+                <p>Strateji Direktörü</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Değerlerimiz</h2>
+        <div class="values">
+            <div class="value">
+                <h3>İnovasyon</h3>
+                <p>Yenilikçi düşünceyi ve teknolojiyi işimize entegre ederek, her zaman bir adım önde olmaya çalışıyoruz.</p>
+            </div>
+            <div class="value">
+                <h3>İş Ahlakı</h3>
+                <p>Yüksek etik değerlerle çalışarak güvenilir bir iş ilişkisi kurmaya önem veriyoruz.</p>
+            </div>
+            <div class="value">
+                <h3>Çeşitlilik</h3>
+                <p>Farklı düşünceleri ve kültürleri birleştirerek daha güçlü ve yaratıcı bir ekip oluşturuyoruz.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Motivasyon. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
